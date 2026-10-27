@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordens de Produção</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="painel">
+        <h1>Ordens de Produção</h1>
+        <button id="modo-tv">Modo TV</button>
+
+        <form id="form-op">
+            <label for="produto">Produto</label>
+            <input id="produto" type="text">
+            <label for="quantidade">Quantidade (peças)</label>
+            <input id="quantidade" type="number">
+            <label for="maquina">Máquina</label>
+            <select id="maquina">
+                <option>Torno CNC</option>
+                <option>Prensa</option>
+                <option>Injetora</option>
+                <option>Solda</option>
+            </select>
+            <button type="submit">Abrir OP</button>
+        </form>
+        <p id="mensagem" class="erro" hidden></p>
+
+        <label for="busca">Buscar produto</label>
+        <input id="busca" type="search">
+
+        <button class="filtro selecionado" data-filtro="todas">Todas</button>
+        <button class="filtro" data-filtro="aguardando">Aguardando</button>
+        <button class="filtro" data-filtro="producao">Em produção</button>
+        <button class="filtro" data-filtro="concluida">Concluídas</button>
+        <p id="resumo" class="resultado"></p>
+
+        <ul id="lista" class="lista-ops"></ul>
+        <p id="vazia" hidden>Nenhuma ordem encontrada.</p>
+    </main>
+    <script src="js/ordens.js"></script>
+</body>
+
+</html>
