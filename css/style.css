@@ -95,7 +95,7 @@
   .painel { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem; }
   .lista-ops { list-style: none; padding: 0; }
   .op {
-    background: #7d9eb9;
+    background: #ffffff;
   margin-top: 1rem;
   padding: 1rem;
   border: 1px solid var(--cor-borda);
