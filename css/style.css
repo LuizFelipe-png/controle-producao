@@ -1,7 +1,7 @@
 :root {
-    --cor-fundo: #FFFFFF;
-    --cor-texto: #1E2A38;
-    --cor-destaque: #E07A2E;
+    --cor-fundo: #ffffff ;
+    --cor-texto: #000000;
+    --cor-destaque: #1E3E62 ;
     --cor-borda: #D9DDD3;
     --cor-suave: #F4F5EF;
   }
@@ -19,6 +19,7 @@
     line-height: 1.6;
     color: var(--cor-texto);
     background: var(--cor-fundo);
+    background: linear-gradient(to bottom, var(--cor-fundo), var(--cor-destaque));
   }
   
   /* ===== 3. Layout ===== */
@@ -94,6 +95,7 @@
   .painel { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem; }
   .lista-ops { list-style: none; padding: 0; }
   .op {
+    background: #7d9eb9;
   margin-top: 1rem;
   padding: 1rem;
   border: 1px solid var(--cor-borda);
@@ -102,9 +104,9 @@
   }
   .op h3 { margin: 0; }
   .op p { margin: 0.25rem 0; }
-  .status-aguardando { border-left-color: #F9A825; }
+  .status-aguardando { border-left-color: #fd9c00; }
   .status-producao { border-left-color: #1565C0; }
-  .status-concluida { border-left-color: #2E7D32; opacity: 0.7; }
+  .status-concluida { border-left-color: #12dd1c; opacity: 0.7; }
   .filtro.selecionado { outline: 3px solid var(--cor-texto); }
   .modo-tv { /* a tela grande no chão de fábrica */
   --cor-fundo: #111111;
